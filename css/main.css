@@ -110,24 +110,39 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 1.5em;
+}
+
+h3, h4 {
+  font-size: 1.25em;
+}
+
+p {
+  font-size: 1.125em;
 }
 
 .container {
-  width: 95%;
+  width: 90%;
 }  
 
 header, #projects, #skills, #about, #contact, footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px 0;
 }
 
 header {
   background-color: #152A3E;
-  padding: 20px 0;
+  width: 100%;
+  padding: 25px 0 0 0;
+}
+
+header .container {
   width: 100%;
 }
+
+/* ------------------ NAV LINK STYLING ----------------- */
 
 header nav {
   display: flex;
@@ -143,11 +158,11 @@ nav * {
 }
 
 header nav ul {
-  width: 80%;
+  width: 95%;
   list-style: none;
   display: flex;
   justify-content: space-between;
-  font-size: larger;
+  font-size: 1.125em;
   align-items: center;
 }
 
@@ -202,27 +217,39 @@ header nav a:hover {
   color: #e9b14c;
 }
 
+/* -------------------- HEADER STYLING -------------------- */
+
 .header-divider {
   background-color: #CAC691;
-  width: 100%;
   height: 2px;
   margin: 20px 0 10px 0;
 }
 
-.intro-area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #152A3E;
+.intro {
+  text-align: center;
+  margin: 0 15px;
+  padding: 25px 0;
 }
 
-.mission {
-  text-align: center;
+.intro h1 {
+  padding-bottom: 30px;
 }
+
+.intro h2 {
+  padding: 25px 0;
+}
+
+/*------------------- WORK/PROJECTS STYLING -----------------*/
 
 #projects {
   background-color: #cac691;
   color: #152A3E;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.75em;
+  margin-top: 0;
 }
 
 .project-wrapper {
@@ -234,25 +261,43 @@ header nav a:hover {
 
 .project-piece {
   width: 100%;
+  padding: 25px 0;
 }
 
 figure {
   text-align: center;
 }
 
-.project-area figure {
-  width: 100%;
+.project-piece figure {
   padding: 0 10px;
 }
 
-.project-area figure img {
-  width: 80%;
+.project-piece figure img {
+  width: 100%;
 }
+
+.project-title {
+  text-align: center;
+}
+
+/* ---------------------- SKILLS STYLES ------------------ */
 
 #skills {
   background-color: #EEEFDA;
   color: #152A3E;
 }
+
+.skill-wrapper, .tools-wrapper {
+  text-align: center;
+}
+
+p.skill {
+  background-color: #152A3E;
+  color: #CAC691;
+  padding: 15px 0;
+}
+
+/* --------------------- ABOUT ME STYLES ------------------*/
 
 #about {
   background-color: #CAC691;
@@ -260,17 +305,102 @@ figure {
 
 }
 
+/* ------------------------- FOOTER -----------------------*/
+
 footer {
   background-color: #152A3E;
   color: #CAC691;
 }
 
+footer .container {
+  width: 90%;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.contact-info {
+  /* width: 60%; */
+}
+
+address {
+  text-align: center;
+  font-style: normal;
+}
+
+.social {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.social-icons li a {
+  color: #CAC691;
+  opacity: 0.6;
+  transition: opacity .55s ease-in-out;
+}
+
+.social-icons li a:hover {
+  opacity: 1.0;
+  transition: opacity .55s ease-in-out;
+}
+
+footer ul {
+  width: 100%;
+}
+
+.copyright {
+  text-align: center;
+}
 
 
 
+/* ---------------------- MEDIA QUERIES ----------------- */
 
 
+@media (min-width: 768px) {
+  header nav ul {
+    justify-content: space-around;
+    font-size: 1.2em
+  }
+}
 
+@media (min-width: 1024px) {
+  header nav ul {
+    justify-content: flex-end;
+  }
+
+  header nav ul li {
+    padding: 0 20px;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  /* .zoom {
+    transition: transform .2s;
+    margin: 0;
+    width: 60%;
+    align-items: center;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5);  
+  } */
+}
 
 
 

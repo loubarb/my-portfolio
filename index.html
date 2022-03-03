@@ -15,6 +15,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+  <script src="https://kit.fontawesome.com/a73a4ce0e2.js" crossorigin="anonymous"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,38 +33,36 @@
 
 <body>
   <header> 
-    <section class="intro-area">
-      <div class="container">
-        <nav>
-          <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-        <div class="header-divider">
-        </div>
-
-        <div class="mission">
-          <h1>Hello! Nice to meet you. I'm Louis!</h1>
-          <h2>I’m a front-end web developer seeking opportunities to add and enhance your webpages styles and functionality!</h2>
-        </div>
-
+      <div class="header-divider">
       </div>
-    </section>
+
+      <div class="intro">
+        <h1>Hello! Nice to meet you. I'm Louis!</h1>
+        <h2>I’m a front-end web developer seeking opportunities to create, collaborate, and enhance your webpages styles and functionality.</h2>
+      </div>
+
+    </div>
   </header>
 
   <main>
     <section id="projects">
       <div class="container">
-        <h3>Projects</h3>
+        <h3 class="section-title">Projects</h3>
         <div class="project-wrapper">
           <div class="project-piece">
-            <figure>
-              <a href="">
-                <img src="" alt="Guess the Word Game" />
+            <figure class="zoom">
+              <a href="https://loubarb.github.io/guess-the-word/">
+                <img src="./img/guess-word-game.png" alt="Guess the Word Game" />
               </a>
             </figure>
             <h4 class="project-title">Guess the Word Game</h4>
@@ -71,29 +70,29 @@
           </div>
 
           <div class="project-piece">
-            <figure>
-            <a href="">
-              <img src="" alt="Sticky Notes App" /></a>
+            <figure class="zoom">
+            <a href="https://dyt9vw.csb.app">
+              <img src="./img/sticky-notes.png" alt="Sticky Notes App" /></a>
             </figure>
             <h4 class="project-title">Sticky Notes App</h4>
             <p>A sticky notes app that allows users to create & delete as many notes as they would like. This project used React to track user's saved progress when closing and reopening the app in the browser, as well as provide functionality to search for and edit notes in real-time.</p>
           </div>
 
           <div class="project-piece">
-            <figure>
-              <a href="">
-                <img src="" alt="Github Repo Gallery" />
+            <figure class="zoom">
+              <a href="https://loubarb.github.io/github-repo-gallery/">
+                <img src="./img/github-repo-gallery.png" alt="Github Repo Gallery" />
               </a>
             </figure>
             <h4 class="project-title">Github Repo Gallery</h4>
             <p>A webpage that incorporates all of my Github repos in one place! This project used Github APIs to pull data from my Github profile and active repos and display them in an organized layout. It also includes dynamic search functionality to filter through the repos and see more details about each one.</p>
           </div>
 
-          <div class="project-piece">
+          <!-- <div class="project-piece">
           </div>
 
           <div class="project-piece">
-          </div>
+          </div> -->
         </div>
 
       </div>
@@ -101,31 +100,33 @@
 
     <section id="skills">
       <div class="container">
-        <h3>Skills</h3>
-        <h4>Developer Skills</h4>
-        <ul>
-          <li>HTML5</li>
-          <li>CSS3 & Flexbox/Grid</li>
-          <li>Responsive Typography</li>
-          <li>JavaScript/ES6</li>
-          <li>React/JSX</li>
-          <li>Git and GitHub</li>
-        </ul>
-        <h4>Tech Tools</h4>
-        <ul>
-          <li>Chrome Dev Tools</li>
-          <li>Text Editors (VS Code, Atom)</li>
-          <li>FTP Client</li>
-          <li>Photoshop</li>
-        </ul>
+        <h3 class="section-title">Skills</h3>
+        <div class="skill-wrapper">
+          <h4>Developer Skills</h4>
+          
+            <p class="skill">HTML5</p>
+            <p class="skill">CSS3 & Flexbox/Grid</p>
+            <p class="skill">Responsive Typography</p>
+            <p class="skill">JavaScript/ES6</p>
+            <p class="skill">React/JSX</p>
+            <p class="skill">Git and GitHub</p>
+        </div>
+
+        <div class="tools-wrapper">
+          <h4>Tech Tools</h4>
+            <p class="skill">Chrome Dev Tools</p>
+            <p class="skill">Text Editors (VS Code, Atom)</p>
+            <p class="skill">FTP Client</p>
+            <p class="skill">Photoshop</p>
+        </div>
+          
       </div>
     </section>
 
     <section id="about">
       <div class="container">
         <p>I used to work as a Help Desk Technician, and while I loved being in the tech field, the creative side of me was not being fulfilled. I decided to dip into the world of learning front-end development and was immediately pulled in by the endless possibilities that can be created to make a webpage look and function great!</p>
-        <p>Outside of the developer world, music and dance are big parts of my life. I am a self taught shuffle dancer and take great pride in learning and progressing my dancing all while getting in a great workout and having fun!</p>
-        <p>Click here to see me in action!</p>
+        <p>Outside of the developer world, music and dance are big parts of my life. I am a self taught shuffle dancer and take pride in learning and progressing my dancing all while getting in a great workout and having fun! Here's a short clip of me in action :)</p>
       </div>
     </section>
 
@@ -133,20 +134,27 @@
 
   <footer id="contact">
     <div class="container">
-      <h2>Connect with Me</h2>
-      <div class="contact">
-        <address>
-          <h4>Contact</h4>
-          <p>646-541-2618</p>
-          <p>louis.barbati@gmail.com</p>
-        </address>
-      </div>
-      <div class="social">
-        <h4>Socials</h4>
+      <h3 class="section-title">Connect with Me</h3>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <address>
+            <h4>Contact</h4>
+            <p>646-541-2618</p>
+            <p>louis.barbati@gmail.com</p>
+          </address>
+        </div>
 
-      </div>
-      <div class="copyright">
-        <p>Copyright 2022 | Louis Barbati</p>
+        <div class="social">
+          <h4>Socials</h4>
+          <ul class="social-icons">
+            <li><a href="https://github.com/loubarb"><i class="fa-brands fa-github fa-3x"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/louis-barbati-46772851/"><i class="fa-brands fa-linkedin fa-3x"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="copyright">
+          <p>Copyright 2022 | Louis Barbati</p>
+        </div>
       </div>
     </div>
   </footer>
