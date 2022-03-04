@@ -111,14 +111,22 @@ h1 {
 
 h2 {
   font-size: 1.5em;
+  font-family: 'Lekton', sans-serif;
 }
 
-h3, h4 {
+h3 {
   font-size: 1.25em;
+  font-family: 'Lexend Tera', sans-serif;
+}
+
+h4 {
+  font-size: 1.25em;
+  font-family: 'Lekton', sans-serif;
 }
 
 p {
   font-size: 1.125em;
+  font-family: 'Lekton', sans-serif;
 }
 
 .container {
@@ -318,17 +326,19 @@ figure {
 #skills {
   background-color: #EEEFDA;
   color: #152A3E;
+  text-align: center;
 }
 
 .skill-wrapper, .tools-wrapper {
   text-align: center;
-  padding: 10px 0;
+  padding-bottom: 25px;
 }
 
 p.skill {
   background-color: #152A3E;
   color: #CAC691;
   padding: 15px 0;
+  margin: 20px 0;
 }
 
 /* --------------------- ABOUT ME STYLES ------------------*/
@@ -347,6 +357,10 @@ p.skill {
 
 .about-wrapper figure img {
   width: 90%;
+}
+
+.about-wrapper h4 {
+  text-align: center;
 }
 
 #about a {
@@ -410,6 +424,7 @@ footer ul {
 
 .copyright {
   text-align: center;
+  margin-top: 100px;
 }
 
 
@@ -419,6 +434,11 @@ footer ul {
 
 @media (min-width: 768px) {
 
+.container {
+  max-width: 700px;
+}
+
+  /* ---------------------- HEADER STYLES ---------------- */
   header .container {
     display: flex;
     flex-wrap: wrap;
@@ -426,24 +446,111 @@ footer ul {
     justify-content: center;
   }
 
-  header nav ul {
+  header nav {
     justify-content: space-around;
-    font-size: 1.2em
+    width: 100%;
+  }
+
+  header nav ul {
+    font-size: 1.2em;
   }
 
   .header-divider {
     display: none;
   }
 
-
   header .intro {
     max-width: 600px;
-    margin-top: 30px;
+    margin-top: 20px;
+  }
+
+  /*------------------- WORK/PROJECTS STYLING -----------------*/
+
+  .project-wrapper {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .project-piece {
+    width: 45%;
+  }
+
+  .project-piece figure img {
+    width: 280px;
+    height: 200px;
+  }
+
+  .project-description {
+    height: 250px;
+  }
+
+  /* ---------------------- SKILLS STYLES ------------------ */
+
+  .skill-wrapper, .tools-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .skill {
+    width: 45%;
+  }
+
+  /* --------------------- ABOUT ME STYLES ------------------*/
+
+  .about-wrapper figure {
+    padding: 30px;
+  }
+
+  .about-wrapper figure img {
+    width: 75%;
+  }
+
+  /* ------------------------- FOOTER -----------------------*/
+
+  .contact-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 25px;
+  }
+
+  .social {
+    width: 20%;
+  }
+
+  .social-icons {
+    width: 100%;
   }
 
 }
 
 @media (min-width: 1024px) {
+
+  .container {
+    max-width: 95%;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3, .section-title {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  /* ---------------------- HEADER STYLES ---------------- */
+
   header nav ul {
     justify-content: flex-end;
   }
@@ -456,18 +563,87 @@ footer ul {
     display: none;
   }
 
-  /* .zoom {
+  /*------------------- WORK/PROJECTS STYLING -----------------*/
+
+  .project-piece {
+    width: 20%;
+  }
+
+  .project-piece figure img {
+    width: 280px;
+    height: 200px;
+  }
+
+  .project-description {
+    height: 250px;
+  }
+
+  .zoom {
     transition: transform .2s;
-    margin: 0;
-    width: 60%;
-    align-items: center;
   }
   
   .zoom:hover {
-    -ms-transform: scale(1.5); 
-    -webkit-transform: scale(1.5); 
-    transform: scale(1.5);  
-  } */
+    -ms-transform: scale(1.25); 
+    -webkit-transform: scale(1.25); 
+    transform: scale(1.25);  
+  }
+
+  /* ---------------------- SKILLS STYLES ------------------ */
+
+  .skill {
+    width: 30%;
+  }
+
+   /* --------------------- ABOUT ME STYLES ------------------*/
+
+  .about-wrapper {
+    display: grid;
+    padding: 25px 0 50px 0;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+  }
+
+  .about-wrapper .section-title {
+    justify-self: start;
+    align-self: end;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .about-wrapper h4 {
+    margin-top: 5px;
+    align-self: start;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 5;
+  }
+
+  .about-wrapper figure {
+    margin: 0;
+    padding: 0;
+    justify-items: start;
+    align-items: stretch;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .about-wrapper figure img {
+    width: 85%;
+  }
+
+  .about-description {
+    align-items: end;
+    justify-items: end;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+  }
+
 }
 
 
