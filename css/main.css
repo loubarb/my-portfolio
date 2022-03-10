@@ -302,6 +302,11 @@ figure {
   font-weight: bold;
 }
 
+.project-links {
+  display: flex;
+  flex-flow: column;
+}
+
 .button-link {
   margin: 20px 0 0 0;
   color: #EEEFDA;
@@ -494,6 +499,12 @@ footer ul {
     height: 250px;
   }
 
+  .project-links {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
   /* ---------------------- SKILLS STYLES ------------------ */
 
   .skill-wrapper, .tools-wrapper {
@@ -591,6 +602,10 @@ footer ul {
     -ms-transform: scale(1.25); 
     -webkit-transform: scale(1.25); 
     transform: scale(1.25);  
+  }
+
+  .project-links {
+    width: 80%;
   }
 
   /* ---------------------- SKILLS STYLES ------------------ */
