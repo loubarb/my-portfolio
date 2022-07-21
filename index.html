@@ -1,239 +1,376 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Louis Barbati | Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Louis Barbati | Portfolio</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+    <script
+      src="https://kit.fontawesome.com/a73a4ce0e2.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-  <script src="https://kit.fontawesome.com/a73a4ce0e2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Lexend+Tera:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Lexend+Tera:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-  <header> 
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="header-divider">
-      </div>
-
-      <div class="intro">
-        <h1>Hello! I'm Louis Barbati. Nice to meet you!</h1>
-        <h2>I’m a Front End Web Developer seeking opportunities to create, collaborate, and enhance your webpages styles and functionality.</h2>
-      </div>
-
-    </div>
-  </header>
-
-  <main>
-    <section id="projects">
+  <body>
+    <header>
       <div class="container">
-        <h3 class="section-title">Projects</h3>
-        <div class="project-wrapper">
-          <div class="project-piece">
-            <figure class="zoom">
-              <a href="https://loubarb.github.io/guess-the-word/" target="_blank">
-                <img src="./img/guess-word-game.png" alt="Guess the Word Game" />
-              </a>
-            </figure>
-            <h4 class="project-title">Guess the Word Game</h4>
-            <p class="project-description">
-              A word guessing game that gives users a limited number of chances to try and guess the hidden word. This project uses Vanilla JavaScript to assess outcomes based on user input and return the appropriate data. The project also utilized Git’s version control through each step of the build.
-            </p>
-            <p><span>Skills: </span>JavaScript, CSS3 <br>
-              <span>Tools: </span>GitHub Pages, JSON, VS Code</p>
-            <div class="project-links">
-              <a href="https://loubarb.github.io/guess-the-word/" target="_blank" class="button-link">live page</a>
-              <a href="https://github.com/loubarb/guess-the-word" target="_blank" class="button-link">code</a>
-            </div>
-          </div>
-
-          <div class="project-piece">
-            <figure class="zoom">
-              <a href="https://dyt9vw.csb.app" target="_blank">
-                <img src="./img/sticky-notes.png" alt="Sticky Notes App" />
-              </a>
-            </figure>
-            <h4 class="project-title">Sticky Notes App</h4>
-            <p class="project-description">
-              A sticky notes app that allows users to create & delete as many notes as they would like. This project uses React to track user's saved progress when closing and reopening the app in the browser, as well as provide functionality to search for and edit notes in real-time.
-            </p>
-            <p><span>Skills: </span>JSX/React, Components<br>
-              <span>Tools: </span>CodeSandbox, Props, State</p>
-            <div class="project-links">
-              <a href="https://dyt9vw.csb.app" target="_blank" class="button-link">live page</a>
-              <a href="https://codesandbox.io/s/final-sticky-notes-app-dyt9vw" target="_blank" class="button-link">code</a>
-            </div>
-          </div>
-
-          <div class="project-piece">
-            <figure class="zoom">
-              <a href="https://loubarb.github.io/github-repo-gallery/" target="_blank">
-                <img src="./img/github-repo-gallery.png" alt="Github Repo Gallery" />
-              </a>
-            </figure>
-            <h4 class="project-title">Github Repo Gallery</h4>
-            <p class="project-description">
-              A webpage that incorporates all of my Github repos in one place! This project uses Github APIs to pull data from my Github profile and active repos and display them in an organized layout. It also includes dynamic search functionality to filter through the repos and see more details about each one.
-            </p>
-            <p><span>Skills: </span>JavaScript, APIs, CSS3 <br>
-              <span>Tools: </span>GitHub, VS Code</p>
-            <div class="project-links">
-              <a href="https://loubarb.github.io/github-repo-gallery/" target="_blank" class="button-link">live page</a>
-              <a href="https://github.com/loubarb/github-repo-gallery" target="_blank" class="button-link">code</a>
-            </div>
-          </div>
-
-          <div class="project-piece">
-            <figure class="zoom">
-              <a href="https://loubarb.github.io/unplugged-retreat/" target="_blank">
-                <img src="./img/unplugged-retreat.png" alt="Unplugged Retreat" />
-              </a>
-            </figure>
-            <h4 class="project-title">Unplugged Retreat</h4>
-            <p class="project-description">
-              A multi-page website for a nature retreat. This project was created from a design comp utilizing Photoshop to incorpoate accurate sizing and spacing of elements. It includes media queries to adapt to mobile, tablet, and desktop screen sizes.
-            </p>
-            <p><span>Skills: </span>HTML5, CSS3, Flexbox <br>
-              <span>Tools: </span>Photoshop, Chrome DevTools
-            </p>
-            <div class="project-links">
-              <a href="https://loubarb.github.io/unplugged-retreat/" target="_blank" class="button-link">live page</a>
-              <a href="https://github.com/loubarb/unplugged-retreat" target="_blank" class="button-link">code</a>
-            </div>
-          </div>
-
-          <div class="project-piece">
-            <figure class="zoom">
-              <a href="https://loubarb.github.io/drum-kit/" target="_blank">
-                <img src="./img/drum-kit.png" alt="Drum Kit" 
-                />
-              </a>
-            </figure>
-            <h4 class="project-title">Drum Kit</h4>
-            <p class="project-description">
-              A simple and fun, interactive drum kit created using JavaScript. It uses keydown events to play audio corresponding to the drum sound for the respective key. Now you can play the drums using just your keyboard!
-            </p>
-            <p><span>Skills: </span>JavaScript, CSS3 <br>
-              <span>Tools: </span>VS Code
-            </p>
-            <div class="project-links">
-              <a href="https://loubarb.github.io/drum-kit/" target="_blank" class="button-link">live page</a>
-              <a href="https://github.com/loubarb/drum-kit" target="_blank" class="button-link">code</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="container">
-        <h3 class="section-title">Skills</h3>
-        <h4 class="skills-title">Developer Skills</h4>
-        <div class="skill-wrapper">
-          <p class="skill">HTML5</p>
-          <p class="skill">CSS3 & Flexbox/Grid</p>
-          <p class="skill">Responsive Typography</p>
-          <p class="skill">JavaScript/ES6</p>
-          <p class="skill">React/JSX</p>
-          <p class="skill">Git and GitHub</p>
-        </div>
-
-        <h4 class="skills-title">Tech Tools</h4>
-        <div class="tools-wrapper">
-          <p class="skill">Chrome Dev Tools</p>
-          <p class="skill">Text Editors (VS Code, Atom)</p>
-          <p class="skill">FTP Clients</p>
-          <p class="skill">Photoshop</p>
-        </div>
-          
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="container">
-        <div class="about-wrapper">
-          <h3 class="section-title">Hi! I'm Louis</h3>
-          <figure>
-            <img src="./img/face-pic.JPG" alt="profile pic" />
-          </figure>
-          <h4>I'm a Front End Web Developer with drive and passion to create and build beautiful websites.</h4>
-          <div class="about-description">
-            <p>I started my career working as a Help Desk Technician, and while I loved being in the tech field, the creative side of me was not being fulfilled. I decided to dip into the world of learning front-end development and was immediately pulled in by the endless creative possibilities to make a webpage look and function great!</p>
-            <p>Outside of the developer world, music and dance are big parts of my life. I am a self taught shuffle dancer and take pride in learning and progressing my dancing all while getting in a great workout and having fun! <br><a href="https://vimeo.com/684886290" target="_blank">Check me out here!</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer id="contact">
-    <div class="container">
-      <h3 class="section-title">Connect with Me</h3>
-      <div class="contact-wrapper">
-        <div class="contact-info">
-          <h4>Contact</h4>
-          <address>
-            <p>646-541-2618</p>
-            <p><a href="mailto:louis.barbati@gmail.com">louis.barbati@gmail.com</a></p>
-          </address>
-        </div>
-
-        <div class="social">
-          <h4>Socials</h4>
-          <ul class="social-icons">
-            <li><a href="https://github.com/loubarb" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/louisbarbaticodes/" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a></li>
+        <nav>
+          <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
+        </nav>
+
+        <div class="header-divider"></div>
+
+        <div class="intro">
+          <h1>Hello! I'm Louis Barbati. Nice to meet you!</h1>
+          <h2>
+            I’m a Technical Support Engineer who dipped into web development to
+            expand my skillset, seeking opportunites to grow in the tech field.
+          </h2>
         </div>
       </div>
-      <div class="copyright">
-        <p>Copyright 2022 | Louis Barbati</p>
+    </header>
+
+    <main>
+      <section id="projects">
+        <div class="container">
+          <h3 class="section-title">Projects</h3>
+          <div class="project-wrapper">
+            <div class="project-piece">
+              <figure class="zoom">
+                <a
+                  href="https://loubarb.github.io/guess-the-word/"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/guess-word-game.png"
+                    alt="Guess the Word Game"
+                  />
+                </a>
+              </figure>
+              <h4 class="project-title">Guess the Word Game</h4>
+              <p class="project-description">
+                A word guessing game that gives users a limited number of
+                chances to try and guess the hidden word. This project uses
+                Vanilla JavaScript to assess outcomes based on user input and
+                return the appropriate data. The project also utilized Git’s
+                version control through each step of the build.
+              </p>
+              <p>
+                <span>Skills: </span>JavaScript, CSS3 <br />
+                <span>Tools: </span>GitHub Pages, JSON, VS Code
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://loubarb.github.io/guess-the-word/"
+                  target="_blank"
+                  class="button-link"
+                  >live page</a
+                >
+                <a
+                  href="https://github.com/loubarb/guess-the-word"
+                  target="_blank"
+                  class="button-link"
+                  >code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-piece">
+              <figure class="zoom">
+                <a
+                  href="https://crypto-price-checker-loubarb.netlify.app/"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/crypto-price-tracker.png"
+                    alt="Crypto Price Tracker"
+                  />
+                </a>
+              </figure>
+              <h4 class="project-title">Crypto Price Checker</h4>
+              <p class="project-description">
+                An app that displays the current price in USD of the top 100
+                cryptocurrencies. This project uses React to search and filter
+                through coins by their full name or ticker symbol using the
+                included search bar. It connects to a REST API to fetch the
+                data.
+              </p>
+              <p>
+                <span>Skills: </span>JSX/React, Components<br />
+                <span>Tools: </span>State, Props, REST API
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://crypto-price-checker-loubarb.netlify.app/"
+                  target="_blank"
+                  class="button-link"
+                  >live page</a
+                >
+                <a
+                  href="https://github.com/loubarb/crypto-tracker"
+                  target="_blank"
+                  class="button-link"
+                  >code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-piece">
+              <figure class="zoom">
+                <a
+                  href="https://loubarb.github.io/github-repo-gallery/"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/github-repo-gallery.png"
+                    alt="Github Repo Gallery"
+                  />
+                </a>
+              </figure>
+              <h4 class="project-title">Github Repo Gallery</h4>
+              <p class="project-description">
+                A webpage that incorporates all of my Github repos in one place!
+                This project uses Github APIs to pull data from my Github
+                profile and active repos and display them in an organized
+                layout. It also includes dynamic search functionality to filter
+                through the repos and see more details about each one.
+              </p>
+              <p>
+                <span>Skills: </span>JavaScript, APIs, CSS3 <br />
+                <span>Tools: </span>GitHub, VS Code
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://loubarb.github.io/github-repo-gallery/"
+                  target="_blank"
+                  class="button-link"
+                  >live page</a
+                >
+                <a
+                  href="https://github.com/loubarb/github-repo-gallery"
+                  target="_blank"
+                  class="button-link"
+                  >code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-piece">
+              <figure class="zoom">
+                <a
+                  href="https://loubarb.github.io/unplugged-retreat/"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/unplugged-retreat.png"
+                    alt="Unplugged Retreat"
+                  />
+                </a>
+              </figure>
+              <h4 class="project-title">Unplugged Retreat</h4>
+              <p class="project-description">
+                A multi-page website for a nature retreat. This project was
+                created from a design comp utilizing Photoshop to incorpoate
+                accurate sizing and spacing of elements. It includes media
+                queries to adapt to mobile, tablet, and desktop screen sizes.
+              </p>
+              <p>
+                <span>Skills: </span>HTML5, CSS3, Flexbox <br />
+                <span>Tools: </span>Photoshop, Chrome DevTools
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://loubarb.github.io/unplugged-retreat/"
+                  target="_blank"
+                  class="button-link"
+                  >live page</a
+                >
+                <a
+                  href="https://github.com/loubarb/unplugged-retreat"
+                  target="_blank"
+                  class="button-link"
+                  >code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-piece">
+              <figure class="zoom">
+                <a href="https://loubarb.github.io/drum-kit/" target="_blank">
+                  <img src="./img/drum-kit.png" alt="Drum Kit" />
+                </a>
+              </figure>
+              <h4 class="project-title">Drum Kit</h4>
+              <p class="project-description">
+                A simple and fun, interactive drum kit created using JavaScript.
+                It uses keydown events to play audio corresponding to the drum
+                sound for the respective key. Now you can play the drums using
+                just your keyboard!
+              </p>
+              <p>
+                <span>Skills: </span>JavaScript, CSS3 <br />
+                <span>Tools: </span>VS Code
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://loubarb.github.io/drum-kit/"
+                  target="_blank"
+                  class="button-link"
+                  >live page</a
+                >
+                <a
+                  href="https://github.com/loubarb/drum-kit"
+                  target="_blank"
+                  class="button-link"
+                  >code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <h3 class="section-title">Skills</h3>
+          <h4 class="skills-title">Developer Skills</h4>
+          <div class="skill-wrapper">
+            <p class="skill">HTML5</p>
+            <p class="skill">CSS3 & Flexbox/Grid</p>
+            <p class="skill">Responsive Typography</p>
+            <p class="skill">JavaScript/ES6</p>
+            <p class="skill">React/JSX</p>
+            <p class="skill">Git and GitHub</p>
+          </div>
+
+          <h4 class="skills-title">Tech Tools</h4>
+          <div class="tools-wrapper">
+            <p class="skill">Chrome Dev Tools</p>
+            <p class="skill">Text Editors (VS Code, Atom)</p>
+            <p class="skill">FTP Clients</p>
+            <p class="skill">Photoshop</p>
+            <p class="skill">Terminal/CMD Line</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="about-wrapper">
+            <h3 class="section-title">Hi! I'm Louis</h3>
+            <figure>
+              <img src="./img/face-pic.JPG" alt="profile pic" />
+            </figure>
+            <h4>
+              I'm a Technical Support Engineer with drive and passion to conquer
+              web development.
+            </h4>
+            <div class="about-description">
+              <p>
+                I started my career working as a Help Desk Technician, and while
+                I loved being in the tech field, I wanted to expand my skillset.
+                I decided to dip into the world of learning front-end
+                development and was immediately pulled in by the endless
+                creative possibilities to create webpages and applications at my
+                fingertips!
+              </p>
+              <p>
+                Outside of the developer world, music and dance are big parts of
+                my life. I am a self taught shuffle dancer and take pride in
+                learning and progressing my dancing all while getting in a great
+                workout and having fun! <br /><a
+                  href="https://vimeo.com/684886290"
+                  target="_blank"
+                  >Check me out here!</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="container">
+        <h3 class="section-title">Connect with Me</h3>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h4>Contact</h4>
+            <address>
+              <p>646-541-2618</p>
+              <p>
+                <a href="mailto:louis.barbati@gmail.com"
+                  >louis.barbati@gmail.com</a
+                >
+              </p>
+            </address>
+          </div>
+
+          <div class="social">
+            <h4>Socials</h4>
+            <ul class="social-icons">
+              <li>
+                <a href="https://github.com/loubarb" target="_blank"
+                  ><i class="fa-brands fa-github fa-3x"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/louisbarbaticodes/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin fa-3x"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright 2022 | Louis Barbati</p>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  
-  
-
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('set', 'transport', 'beacon');
+      ga('send', 'pageview');
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 </html>
