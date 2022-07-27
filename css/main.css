@@ -166,10 +166,11 @@ nav * {
 }
 
 header nav ul {
-  width: 95%;
+  width: 90%;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: center;
   font-size: 1.125em;
   align-items: center;
 }
@@ -177,6 +178,7 @@ header nav ul {
 header nav li {
   display: inline-block;
   list-style: outside none none;
+  padding: 10px 0;
 }
 
 header nav ul li a {
@@ -338,7 +340,7 @@ figure {
   padding: 25px 0 0 0;
 }
 
-.skill-wrapper, .tools-wrapper {
+.skill-wrapper, .tools-wrapper, .soft-skill-wrapper {
   text-align: center;
   padding-bottom: 25px;
 }
@@ -367,6 +369,8 @@ p.skill {
 
 .about-wrapper figure img {
   width: 90%;
+  border: 5px solid #152A3E;
+  border-radius: 10px;
 }
 
 .about-wrapper h4 {
@@ -467,6 +471,7 @@ footer ul {
 
   header nav ul {
     font-size: 1.2em;
+    justify-content: space-evenly;
   }
 
   .header-divider {
@@ -507,7 +512,7 @@ footer ul {
 
   /* ---------------------- SKILLS STYLES ------------------ */
 
-  .skill-wrapper, .tools-wrapper {
+  .skill-wrapper, .tools-wrapper, .soft-skill-wrapper {
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
