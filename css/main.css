@@ -340,7 +340,7 @@ figure {
   padding: 25px 0 0 0;
 }
 
-.skill-wrapper, .tools-wrapper, .soft-skill-wrapper {
+.skill-wrapper, .tools-wrapper, .soft-skill-wrapper, .tech-skill-wrapper {
   text-align: center;
   padding-bottom: 25px;
 }
@@ -512,7 +512,7 @@ footer ul {
 
   /* ---------------------- SKILLS STYLES ------------------ */
 
-  .skill-wrapper, .tools-wrapper, .soft-skill-wrapper {
+  .skill-wrapper, .tools-wrapper, .soft-skill-wrapper, .tech-skill-wrapper {
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
@@ -693,8 +693,24 @@ footer ul {
 
   /* ---------------------- SKILLS STYLES ------------------ */
 
-  #skills .container {
-    max-width: 1000px;
+  #skills {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+
+  .dev-skills, .tool-skills, .soft-skills, .tech-skills {
+    width: 400px;
+  }
+
+  p.skill {
+    width: 250px;
   }
 
   /* --------------------- ABOUT ME STYLES ------------------*/
